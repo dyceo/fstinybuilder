@@ -1,6 +1,6 @@
 # fstinybuilder
 按照配置自动下载并编译的脚本--功能可能存在缺陷
-main.sh = 执行 它运行fcong 和 runme.sh
+main.sh = 执行 它运行fconf 和 runme.sh
 
 main.sh = master
 fcong = seter
