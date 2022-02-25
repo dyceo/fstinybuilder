@@ -1,0 +1,48 @@
+packlist=(
+'bash-4.4.12 wget https://ftp.gnu.org/gnu/bash/ bash-4.4.12.tar.gz'
+)
+i=${#packlist[@]}
+((i--))
+
+while [ $i -ge 0 ];do	
+	t=(`echo ${packlist[i]}`)
+	((i--))
+	echo "------------程序名称:${t[0]}---------------"
+	echo "  下载方式:${t[1]} 链接地址:${t[2]} 包名:${t[3]}"
+	echo "-------------------------------------------"
+done
+
+
+
+# *.tar 用 tar –xvf 解压 
+# *.tar.gz和*.tgz 用 tar –xzf 解压 file检出标记:gzip
+# *.tar.bz2用tar –xjf 解压 file检出标记:bzip2
+# *.tar.xz用tar -xJf解压 file检出标记:XZ
+# *.tar.Z 用tar –xZf 解压 
+# *.gz 用 gzip -d或者gunzip 解压
+# *.bz2 用 bzip2 -d或者用bunzip2 解压
+# *.Z 用 uncompress 解压
+# *.rar 用 unrar e解压 
+# *.zip 用 unzip 解压
+#数字类判断:
+#    大于 -gt (greater than)
+#    小于 -lt (less than)
+#    大于或等于 -ge (greater than or equal)
+#    小于或等于 -le (less than or equal)
+#    不相等 -ne （not equal）
+#    相等 -eq （equal）
+#字符串类判断:
+#	相等 ==
+#	不等于 !=
+#文件类判断
+#	文件是否存在 -e
+#	文件长度是否为0 -s
+#	文件是否具备某个权限 可读 --r 可写 -w 可执行 -x
+#省却.....
+#条件的与或非[]内
+#-a 　 　　　　　 与 
+#-o　　　　　　　 或 
+#!　　　　　　　　非
+#shell返回值判断
+#	成功:$?=0 
+#	失败:$?=非0
