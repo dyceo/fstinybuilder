@@ -3,9 +3,9 @@
 main.sh = 执行 它运行fconf 和 runme.sh
 
 main.sh = master
-fcong = seter
+fconf = seter
 runme.sh = worker
 
 
-edit fcon && source main.sh
-编辑 fcon 然后用source 运行main.sh 
+edit fconf && source main.sh
+编辑 fconf 然后用source 运行main.sh 
